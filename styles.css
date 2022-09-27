@@ -80,11 +80,7 @@ body{
     line-height:32px;
     text-transform: uppercase;
 }
-.boton:hover{
-    opacity: 0.50;
-    -moz-opacity: .50;
-    filter:alpha (opacity=50);
-  }
+
 .boton a{
     text-align: center;
     color:#fff;
@@ -110,12 +106,33 @@ body{
     line-height:32px;
     text-transform: uppercase;
 }
-.boton2:hover{
-    opacity: 0.50;
-    -moz-opacity: .50;
-    filter:alpha (opacity=50);
-  }
+
 .boton2 a{
+    text-align: center;
+    color:#fff;
+    margin-top: 90px;
+    text-decoration:none;
+    font-size: 15px;
+    padding:5px 5px 15px 5px;
+}
+.boton3{
+    left: 200px;
+    top: 50px;
+    position:relative;
+    width:80px;
+    height:80px;
+    background-color:#1B1A17;
+    text-align: center;
+    padding-top: 20px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    font-size:11px;
+    line-height:32px;
+    text-transform: uppercase;
+}
+
+.boton3 a{
     text-align: center;
     color:#fff;
     margin-top: 90px;
@@ -148,13 +165,12 @@ body{
 
 .material-symbols-rounded {
   margin: 30px 0 20px 0;
-  color: #cc9199;
+  color: #f10625;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
-  
+  'opsz' 48 
 }
 
 .contenedor,
@@ -221,15 +237,22 @@ body{
     height: 2px;
     background:rgb(240, 165, 0) ;
 }
+.line3{
+    margin-top: 10px;
+    height: 2px;
+    background:rgb(240, 165, 0) ;
+}
 /* cards */
 .content-cards{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .card{
+    margin-bottom: 20px;
     width: 30%;
     text-align: center;
     background-color: #fff;
@@ -363,6 +386,77 @@ input[type="submit"]:hover{
     cursor:pointer;
     color:tomato;
 }
+
+
+/* modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: rgb(240, 165, 0);
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(240, 165, 0);
+    color: white;
+  }
 
 footer{
     background-color: rgb(230, 213, 184);

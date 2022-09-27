@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="boton3"> 
+        <a href="index.html">Inicio</a>
+    </div> 
+
+    <div class="line3">
+    </div>
+
+    <section class="cards contenedor" id="card">
+        <h2 class="titulo">Nuestros Productos</h2>
+        <div class="content-cards">
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza roja</h3>
+                <p>Colorada del sur</p>
+                <img class="roja" src="/public/cervezaRoja2.png" alt="">
+                
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza negra</h3>
+                <p>Negra del sur</p>
+                <button id="myBtn">Ver producto</button>
+                <img class="negra "src="public/cervezaNegra.png" alt="">
+    
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+            <article class="card">
+                <span class="material-symbols-rounded">
+                    sports_bar
+                    </span>
+                <h3>Cerveza rubia</h3>
+                <p>Rubia del sur</p>
+                <img src="/public/cervezaRubia.png" alt="">
+        
+            </article>
+        </div>
+    </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Producto</h2>
+    </div>
+    <div class="modal-body">
+        <article class="card">
+            <span class="material-symbols-rounded">
+                sports_bar
+                </span>
+            <h3>Cerveza rubia</h3>
+            <p>Rubia del sur</p>
+            <img src="/public/cervezaRubia.png" alt="">
+    
+        </article>
+    </div>
+    <div class="modal-footer">
+      <h3>Cerveza VORHER</h3>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<script>
+    
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+//Abre modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Cierra el modal si se apreta la X
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cierra el modal si se clickea afuera
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
